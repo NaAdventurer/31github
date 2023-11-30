@@ -1,8 +1,3 @@
-> > > num
-> > > id(num)
-> > > 7748389
-> > > name='meerim'
-> > > id(name)
-> > > 759040309
-> > > a=10
-> > > b=a 
+print('outcome=6')
+print('outcome', 5*5)
+print(5**3)
