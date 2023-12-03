@@ -1,5 +1,15 @@
-git clone https://github.com/NaAdventurer/NaAdventurer.github.io
-cd NaAdventurer.github.io
+# Клонирование репозитория
+if git clone https://github.com/NaAdventurer/NaAdventurer.github.io; then
+    echo "Репозиторий успешно склонирован."
+    # Переход в каталог
+    cd NaAdventurer.github.io || exit
+    echo "Переход в каталог прошел успешно."
 
-echo "Hello World" > index.html
+    # Создание файла index.html
+    echo "Hello World" > index.html
+    echo "Файл index.html успешно создан."
+else
+    echo "Ошибка при клонировании репозитория."
+fi
+
 
