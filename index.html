@@ -1,16 +1,5 @@
-# Клонирование репозитория
-if git clone https://github.com/NaAdventurer/NaAdventurer.github.io; then
-    echo "Репозиторий успешно склонирован."
-    # Переход в каталог
-    cd NaAdventurer.github.io || exit
-    echo "Переход в каталог прошел успешно."
+git clone https://github.com/NaAdventurer/NaAdventurer.github.io
+cd NaAdventurer.github.io
 
-    # Создание файла index.html
-    echo "Hello World" > index.html
-    echo "Файл index.html успешно создан."
-else
-    echo "Ошибка при клонировании репозитория."
-fi
-python3 -m http.server
-
+echo "Hello World" > index.html
 
