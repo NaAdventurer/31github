@@ -1,0 +1,33 @@
+name: Create Sticker
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Create Sticker
+        run: |
+          # Ваш скрипт для создания стикера (например, конвертация изображения)
+          # Замените следующую строку на свой собственный скрипт
+          echo "Ваш скрипт для создания стикера здесь"
+        # Поместите ваш скрипт и изображение в репозиторий
+        # Обновите путь к изображению в вашем скрипте
+        # Сохраните результат в какую-то директорию, например, "stickers"
+        # Выходные данные вашего скрипта будут доступны для следующих шагов
+
+      - name: Commit and push sticker
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add .
+          git commit -m "Add sticker"
+          git push
+
