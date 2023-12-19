@@ -1,2 +1,2 @@
 # 31github
-print('outcome',
+print('outcome', abs(-5))

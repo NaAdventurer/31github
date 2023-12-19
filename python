@@ -1,0 +1,56 @@
+class Body:
+    def __init__(self):
+        pass
+
+    def what_to_do(self):
+        return "Дано мне тело – что мне делать с ним,"
+
+class GardenerAndFlower(Body):
+    def __init__(self):
+        super().__init__()
+
+    def breathe_and_live(self):
+        return "За радость тихую дышать и жить"
+
+    def whom_to_thank(self):
+        return "Кого, скажите, мне благодарить?"
+
+class WorldPrisoner(Body):
+    def __init__(self):
+        super().__init__()
+
+    def not_alone(self):
+        return "В темнице мира я не одинок."
+
+class EternityGlass:
+    def __init__(self):
+        self.pattern = "Мое дыхание, мое тепло."
+
+    def engrave_pattern(self):
+        return "Запечатлеется на нем узор,"
+
+    def recognizable_since_recently(self):
+        return "Неузнаваемый с недавних пор."
+
+    def let_haze_flow_away(self):
+        return "Пускай мгновения стекает муть"
+
+    def cherish_pattern(self):
+        return "Узора милого не зачеркнуть."
+
+# Пример использования
+body = Body()
+print(body.what_to_do())
+
+gardener_and_flower = GardenerAndFlower()
+print(gardener_and_flower.breathe_and_live())
+print(gardener_and_flower.whom_to_thank())
+
+world_prisoner = WorldPrisoner()
+print(world_prisoner.not_alone())
+
+eternity_glass = EternityGlass()
+print(eternity_glass.engrave_pattern())
+print(eternity_glass.recognizable_since_recently())
+print(eternity_glass.let_haze_flow_away())
+print(eternity_glass.cherish_pattern())
