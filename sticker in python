@@ -1,0 +1,24 @@
+from PIL import Image, ImageDraw, ImageFont
+
+def create_sticker(input_image_path, output_image_path, sticker_text, position=(10, 10), font_size=30, font_color=(255, 255, 255)):
+    # Open the original image
+    original_image = Image.open(input_image_path)
+
+    # Create a drawing object
+    draw = ImageDraw.Draw(original_image)
+
+    # Load a font
+    font = ImageFont.load_default()
+
+    # Specify the position, text, font size, and color of the sticker
+    draw.text(position, sticker_text, font=font, fill=font_color)
+
+    # Save the modified image with the sticker
+    original_image.save(output_image_path)
+
+# Example usage
+input_image_path = "input_image.jpg"
+output_image_path = "output_image_with_sticker.jpg"
+sticker_text = "Sticker Text Here"
+
+create_sticker(input_image_path, output_image_path, sticker_text)
